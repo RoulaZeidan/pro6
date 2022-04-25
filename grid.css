@@ -1,0 +1,42 @@
+.aside, .footer, .main, .nav ,.sidebar{
+    border: 2px solid gray;
+}
+.container {  display: grid;
+    grid-template-columns: 1fr 4fr 1.6fr;
+    grid-template-rows: 2fr 3fr 9fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "headrer headrer headrer"
+      "nav nav nav"
+      "sidebar main aside"
+      "footer footer footer";
+      height: 500px;
+  }
+  
+  .nav { grid-area: nav;
+    background-color: rgb(247, 232, 21); text-align: center;  }
+  
+  .headrer { grid-area: headrer; 
+    background-color: rgb(223, 85, 43); text-align: center; 
+
+}
+h1{
+    text-align: center;
+    text-decoration: solid;
+    font-weight: bold;
+}
+  
+  .main { grid-area: main;
+    background-color: rgb(3, 48, 48); text-align: center; }
+  
+  .footer { grid-area: footer;
+    background-color: rgb(247, 232, 21); text-align: center;  }
+  
+  .sidebar { grid-area: sidebar;
+    background-color:  aqua; text-align: center;  }
+  
+  .aside { grid-area: aside;
+    background-color: aqua; text-align: center;  }
+
+  
